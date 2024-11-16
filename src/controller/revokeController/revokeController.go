@@ -2,7 +2,6 @@ package revokeController
 
 import (
 	"auth-services/utils"
-	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"strings"
