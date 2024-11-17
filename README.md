@@ -59,7 +59,7 @@ JWT token authorization : This service is used for JWT token authentication.
     If the token is expired or not.
 
   URL - http://localhost:3001/tokenauth,
-  Method - GET,
+  Method - POST,
   Request Params - Pass these params in Authorization.
     Bearer Token : ‘Pass the JWT token here.’
 	
