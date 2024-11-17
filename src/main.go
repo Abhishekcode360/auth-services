@@ -22,5 +22,4 @@ func main() {
 	router.POST("/refresh", refreshController.Refresh)
 
 	router.Run(":3001")
-	fmt.Println("Exiting....")
 }
