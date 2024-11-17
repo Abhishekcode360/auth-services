@@ -29,7 +29,8 @@ User Creation : This service is used for user creation.
     If the user is already created.
     If the params are provided or not.
   
-  URL - http://localhost:3001/signup
+  URL - http://localhost:3001/signup,
+  Method - POST,
   Request Params - Pass these params in x-www-form-urlencoded 
     email:user@example.com
     password:password@123
@@ -43,7 +44,8 @@ User Signup : This service is used for JWT token generation.
     If the password of the user is correct or not.
     Error with token generation.
   
-  URL - http://localhost:3001/signin
+  URL - http://localhost:3001/signin,
+  Method - POST,
   Request Params - Pass these params in x-www-form-urlencoded 
     email:user@example.com
     password:password@123
@@ -52,11 +54,12 @@ User Signup : This service is used for JWT token generation.
 	{ "data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzE4MzI3MzgsInVzZXJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20ifQ.mSQPvAP6L42uzdbBWhAhzUzKmJUWI97PUHycKyIkc4w", "message": "token generated", "status": 200 }
 	
 JWT token authorization : This service is used for JWT token authentication.
-	Checks: 
+  Checks: 
     If the token is provided or not.
     If the token is expired or not.
 
-  URL - http://localhost:3001/tokenauth
+  URL - http://localhost:3001/tokenauth,
+  Method - GET,
   Request Params - Pass these params in Authorization.
     Bearer Token : ‘Pass the JWT token here.’
 	
@@ -66,7 +69,8 @@ Revoke token service : This service is use to restrict the JWT token.
   Checks: 
     If the token is provided or not.
   
-  URL - http://localhost:3001/revoketoken
+  URL - http://localhost:3001/revoketoken,
+  Method - POST,
   Request Params - Pass these params in Authorization.
     Bearer Token : ‘Pass the JWT token here.’
 	
@@ -77,7 +81,8 @@ Refresh token :  This refresh is used to refresh the revoked JWT token until it 
     If the token is provided or not.
     If the token is expired or not.
   
-  URL - http://localhost:3001/refresh
+  URL - http://localhost:3001/refresh,
+  Method - POST,
   Request Params - Pass these params in Authorization.
     Bearer Token : ‘Pass the JWT token here.’
   	
