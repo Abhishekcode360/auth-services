@@ -6,7 +6,7 @@ To start the services :
 Redirect to /src folder that contains main.go.
 Run the '**go run main.go**'. This will start the service.  
 
-Now the service is available on the port 3001 like : 
+Now the service is available on the port 3001 like this : 
 
 Starting the server....
 [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
@@ -31,8 +31,8 @@ _User Creation_ : This service is used for user creation.
   
   URL - http://localhost:3001/signup,
   Method - POST,
-  Request Params - Pass these params in x-www-form-urlencoded 
-    email:user@example.com
+  Request Params - Pass these params in x-www-form-urlencoded.
+    email:user@example.com,
     password:password@123
 
 	Sample Output : { "data": {}, "message": "user succesfully created", "status": 200 }	
@@ -46,8 +46,8 @@ _User Signup_ : This service is used for JWT token generation.
   
   URL - http://localhost:3001/signin,
   Method - POST,
-  Request Params - Pass these params in x-www-form-urlencoded 
-    email:user@example.com
+  Request Params - Pass these params in x-www-form-urlencoded.
+    email:user@example.com,
     password:password@123
 	
 	Sample output : 
@@ -65,7 +65,7 @@ _JWT token authorization_ : This service is used for JWT token authentication.
 	
 	Sample output : { "data": {}, "message": "token is correct", "status": 200 }
 
-_Revoke token service_ : This service is use to restrict the JWT token.
+_Revoke token_ : This service is use to restrict the JWT token.
   Checks: 
     If the token is provided or not.
   
