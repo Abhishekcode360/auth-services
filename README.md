@@ -4,7 +4,7 @@ There are 5 micro-serivces in this authentication service which serve different 
 
 To start the services : 
 Redirect to /src folder that contains main.go.
-Run the **go run main.go**. This will start the service.  
+Run the '**go run main.go**'. This will start the service.  
 
 Now the service is available on the port 3001 like : 
 
