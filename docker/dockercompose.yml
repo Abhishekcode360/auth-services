@@ -1,0 +1,8 @@
+services:
+  backend:
+    build:
+      context: ../
+      dockerfile: docker/dockerfile
+    image: auth-services
+    container_name: auth-container 
+    network_mode: host
