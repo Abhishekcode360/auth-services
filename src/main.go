@@ -17,7 +17,7 @@ func main() {
 
 	router.POST("/signup", signupController.SignUp)
 	router.POST("/signin", signInController.SignIn)
-	router.GET("/tokenauth", jwtauthController.AuthenticateJWT)
+	router.POST("/tokenauth", jwtauthController.AuthenticateJWT)
 	router.POST("/revoketoken", revokeController.Revoke)
 	router.POST("/refresh", refreshController.Refresh)
 
