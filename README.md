@@ -4,7 +4,7 @@ There are 5 micro-serivces in this authentication service which serve different 
 
 To start the services : 
 Redirect to /src folder that contains main.go.
-Run the go run main.go. This will start the service.  
+Run the **go run main.go**. This will start the service.  
 
 Now the service is available on the port 3001 like : 
 
@@ -24,7 +24,7 @@ Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-
 
 How to use the services : 
 
-User Creation : This service is used for user creation. 
+_User Creation_ : This service is used for user creation. 
   Checks : 
     If the user is already created.
     If the params are provided or not.
@@ -37,7 +37,7 @@ User Creation : This service is used for user creation.
 
 	Sample Output : { "data": {}, "message": "user succesfully created", "status": 200 }	
 
-User Signup : This service is used for JWT token generation. 
+_User Signup_ : This service is used for JWT token generation. 
   Checks : 
     If the params are provided or not.
     If the user exists in the system.
@@ -53,7 +53,7 @@ User Signup : This service is used for JWT token generation.
 	Sample output : 
 	{ "data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzE4MzI3MzgsInVzZXJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20ifQ.mSQPvAP6L42uzdbBWhAhzUzKmJUWI97PUHycKyIkc4w", "message": "token generated", "status": 200 }
 	
-JWT token authorization : This service is used for JWT token authentication.
+_JWT token authorization_ : This service is used for JWT token authentication.
   Checks: 
     If the token is provided or not.
     If the token is expired or not.
@@ -65,7 +65,7 @@ JWT token authorization : This service is used for JWT token authentication.
 	
 	Sample output : { "data": {}, "message": "token is correct", "status": 200 }
 
-Revoke token service : This service is use to restrict the JWT token.
+_Revoke token service_ : This service is use to restrict the JWT token.
   Checks: 
     If the token is provided or not.
   
@@ -76,7 +76,7 @@ Revoke token service : This service is use to restrict the JWT token.
 	
 	Sample output : { "data": {}, "message": "token revoked", "status": 200 }
 
-Refresh token :  This refresh is used to refresh the revoked JWT token until it expires.
+_Refresh token_ :  This refresh is used to refresh the revoked JWT token until it expires.
   Checks: 
     If the token is provided or not.
     If the token is expired or not.
