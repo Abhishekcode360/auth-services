@@ -3,6 +3,7 @@ Authentication services in GIN
 There are 5 micro-serivces in this authentication service which serve different purposes. 
 
 To start the services : 
+Switch to '**master**' branch.
 Redirect to /src folder that contains main.go.
 Run the '**go run main.go**'. This will start the service.  
 
