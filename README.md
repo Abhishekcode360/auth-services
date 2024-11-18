@@ -32,8 +32,8 @@ _User Creation_ : This service is used for user creation.
   URL - http://localhost:3001/signup,
   Method - POST,
   Request Params - Pass these params in x-www-form-urlencoded.
-    email:user@example.com,
-    password:password@123
+    1. email:example.com,
+    2. password:password
 
 	Sample Output : { "data": {}, "message": "user succesfully created", "status": 200 }	
 
@@ -47,8 +47,8 @@ _User Signup_ : This service is used for JWT token generation.
   URL - http://localhost:3001/signin,
   Method - POST,
   Request Params - Pass these params in x-www-form-urlencoded.
-    email:user@example.com,
-    password:password@123
+    1. email:example.com,
+    2. password:password
 	
 	Sample output : 
 	{ "data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzE4MzI3MzgsInVzZXJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20ifQ.mSQPvAP6L42uzdbBWhAhzUzKmJUWI97PUHycKyIkc4w", "message": "token generated", "status": 200 }
@@ -61,7 +61,7 @@ _JWT token authorization_ : This service is used for JWT token authentication.
   URL - http://localhost:3001/tokenauth,
   Method - POST,
   Request Params - Pass these params in Authorization.
-    Bearer Token : ‘Pass the JWT token here.’
+    1. Bearer Token : ‘Pass the JWT token here.’
 	
 	Sample output : { "data": {}, "message": "token is correct", "status": 200 }
 
@@ -72,7 +72,7 @@ _Revoke token_ : This service is use to restrict the JWT token.
   URL - http://localhost:3001/revoketoken,
   Method - POST,
   Request Params - Pass these params in Authorization.
-    Bearer Token : ‘Pass the JWT token here.’
+    1. Bearer Token : ‘Pass the JWT token here.’
 	
 	Sample output : { "data": {}, "message": "token revoked", "status": 200 }
 
@@ -84,6 +84,6 @@ _Refresh token_ :  This refresh is used to refresh the revoked JWT token until i
   URL - http://localhost:3001/refresh,
   Method - POST,
   Request Params - Pass these params in Authorization.
-    Bearer Token : ‘Pass the JWT token here.’
+    1. Bearer Token : ‘Pass the JWT token here.’
   	
 	Sample output: { "data": {}, "message": "token is refreshed", "status": 200 }
