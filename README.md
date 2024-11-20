@@ -20,7 +20,7 @@ Both of these methods will start service on the port 3001.
 
 **How to use the services :**
 
-1. _SignUp Service_ : This service is used for user creation.
+1. **_SignUp Service_** : This service is used for user creation.
 
 Curl : 
 ```bash
@@ -46,7 +46,7 @@ Sample Output : {"data":{},"message":"please provide the params","status":400}
 Sample Output : {"data":{},"message":"user already exist","status":400}	
 ```
 
-_SignIn Service_ : This service is used for JWT token generation. 
+2. **_SignIn Service_** : This service is used for JWT token generation. 
 Curl :
 ```bash
 curl --location 'http://localhost:3001/signin' \
@@ -71,7 +71,7 @@ Testcases :
 {"data":{},"message":"password is incorrect","status":401}
 ```
 
-_JWT Authorization Service_ : This service is used for JWT token authentication.
+3. **_JWT Authorization Service_** : This service is used for JWT token authentication.
 Curl :
 ```bash
 curl --location --request POST 'http://localhost:3001/tokenauth' \
@@ -100,7 +100,7 @@ Testcases :
 {"data":{},"message":"token revoked","status":401}
 ```
 
-_Revoke Token Service_ : This service is use to restrict the JWT token.
+4. **_Revoke Token Service_** : This service is use to restrict the JWT token.
 Curl :
 ```bash
 curl --location --request POST 'http://localhost:3001/revoketoken' \
@@ -119,7 +119,7 @@ Testcases :
 {"data":{},"message":"token missing","status":401}
 ```
 
-_Refresh Token Service_ :  This refresh is used to refresh the revoked JWT token until it expires.
+5. **_Refresh Token Service_** :  This refresh is used to refresh the revoked JWT token until it expires.
 Curl :
 ```bash
 curl --location --request POST 'http://localhost:3001/refresh' \
