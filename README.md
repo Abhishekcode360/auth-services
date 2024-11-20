@@ -10,7 +10,7 @@ To start the auth service :
 2. Redirect to /docker folder that contains dockercompose.yml.
 3. Run the command - 'docker compose -f dockercompose.yml up' or 'sudo docker compose -f dockercompose.yml up'. 
 
-**Method 1 : Main.go**
+**Method 2 : Main.go**
 
 Switch to '**master**' branch.
 Redirect to /src folder that contains main.go.
