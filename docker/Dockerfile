@@ -4,6 +4,6 @@ WORKDIR /var/www/auth-api/src
 
 COPY src .
 
-RUN go build -o main
+EXPOSE 3001
 
-ENTRYPOINT [ "/bin/bash","-c","./main" ]
+ENTRYPOINT [ "/bin/bash","-c","go run main.go" ]
